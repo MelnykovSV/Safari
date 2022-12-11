@@ -1,0 +1,30 @@
+.header {
+    display: grid;
+    grid-template-columns: 74px 190px auto 482px;
+    grid-template-areas: ". deco nav nav";
+    grid-template-rows: 80px;
+
+}
+
+.header__deco {
+    grid-area: deco;
+    background-color: $green
+}
+
+.header__nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: auto 482px;
+    grid-template-rows: 80px;
+}   
+.header__logo {
+    vertical-align: center  ;
+    align-self: center;
+
+}
+
+.header__menu   {
+    display: flex;
+    justify-self: center;
+    gap: 44px;
+}
