@@ -1,40 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Safari</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
       <div class="container">
         <nav class="header__nav">
           <a href="#" class="header__logo">
-            Сафари <span class="header__logo-span">Туристик</span> 
+            Сафари <span class="header__logo-span">Туристик</span>
             <p class="header__logo-text">Турагентство</p>
           </a>
-
+          <ul class="header__menu">
+            <li class="heasder__menu-item">
+              <a href="#" class="header__menu-link">Бронирование</a>
+            </li>
+            <li class="heasder__menu-item">
+              <a href="#" class="header__menu-link">Экскурсии</a>
+            </li>
+            <li class="heasder__menu-item">
+              <a href="#" class="header__menu-link">Туры </a>
+            </li>
+            <li class="heasder__menu-item">
+              <a href="#" class="header__menu-link">Об Африке</a>
+            </li>
+            <li class="heasder__menu-item">
+              <a href="#" class="header__menu-link">О нас</a>
+            </li>
+          </ul>
+          <p class="header__contact">
+            Заказ туров и бронирование:
+            <a href="tel:80508543543" class="header__tel"
+              >тел. 8-050-8-543-543</a
+            >
+          </p>
         </nav>
       </div>
-
     </header>
 
-
     <main class="main">
-
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Сафари по Африке</h1>
+          <p class="hero__text">
+            Туры по самомым экзотическим местам Поехали с нами за новыми
+            впечатлениями!
+          </p>
+          <a href="#" class="hero__button">Оставить заявку</a>
+        </div>
+      </section>
+      <section class="countries">
+        <div class="container">
+          <h2 class="countries__title">Страны</h2>
+          <ul class="countries__list">
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/namibia.jpg" alt="" />
+                <p class="countries__name">Намибия</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/tanzania.jpg" alt="" />
+                <p class="countries__name">Танзания</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/kenia.jpg" alt="" />
+                <p class="countries__name">Кения</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/botsvana.jpg" alt="" />
+                <p class="countries__name">Ботсвана</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/keyptaun.jpg" alt="" />
+                <p class="countries__name">Кейптаун</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/madagaskar.jpg" alt="" />
+                <p class="countries__name">Мадагаскар</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/Zanzibar.jpg" alt="" />
+                <p class="countries__name">Занзибар</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/uar.jpg" alt="" />
+                <p class="countries__name">ЮАР</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/Mozambique.jpg" alt="" />
+                <p class="countries__name">Мозамбик</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/zambia.jpg" alt="" />
+                <p class="countries__name">Замбия</p>
+              </a>
+            </li>
+            <li class="countries__list-item">
+              <a href="#" class="countries__link">
+                <img src="./images/kongo.jpg" alt="" />
+                <p class="countries__name">Конго</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <h2 class="services__title">Основные направления</h2>
+          <ul class="services__list">
+            <li class="services__list">
+              <a href="" class="services__link"
+                ><div class="services__icon-contaner"></div>
+                <p class="services__item-text">
+                  Полная организация отдыха: групповые и индивидуальные туры.
+                </p></a
+              >
+            </li>
+            <li class="services__list">
+              <a href="" class="services__link"
+                ><div class="services__icon-contaner"></div>
+                <p class="services__item-text">
+                  Организация трансфера из любой точки мира
+                </p></a
+              >
+            </li>
+            <li class="services__list">
+              <a href="" class="services__link"
+                ><div class="services__icon-contaner"></div>
+                <p class="services__item-text">
+                  Проживание в отелях по маршруту
+                </p></a
+              >
+            </li>
+            <li class="services__list">
+              <a href="" class="services__link"
+                ><div class="services__icon-contaner"></div>
+                <p class="services__item-text">
+                  Аренда автомобилей и любого вида транспорта
+                </p></a
+              >
+            </li>
+            <li class="services__list">
+              <a href="" class="services__link"
+                ><div class="services__icon-contaner"></div>
+                <p class="services__item-text">Медицинская страховка</p></a
+              >
+            </li>
+            <li class="services__list">
+              <a href="" class="services__link"
+                ><div class="services__icon-contaner"></div>
+                <p class="services__item-text">
+                  Сопровождение русскоговорящих гидов
+                </p></a
+              >
+            </li>
+            <li class="services__list">
+              <a href="" class="services__link"
+                ><div class="services__icon-contaner"></div>
+                <p class="services__item-text">Организация VIP-туров</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="offers">
+        <div class="container">
+          <ul class="offers__list"></ul>
+        </div>
+      </section>
     </main>
 
-
-    <footer class="footer">
-
-    </footer>
-</body>
+    <footer class="footer"></footer>
+  </body>
 </html>
