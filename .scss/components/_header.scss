@@ -1,15 +1,39 @@
+
 .header {
+    background-color: $brown;
 }
 
-
+.header__body {
+}
 .header__nav {
+    grid-column: 1 / span 12;
+    grid-row: 1/2;
 
-}   
+}
 .header__logo {
+}
+.header__logo-span {
+}
+.header__logo-text {
+}
+.header__menu {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+.heasder__menu-item {
+}
+.header__menu-link {
+    padding-top: 27px;
+    padding-bottom: 24px;
+    line-height: calc(19/16);
+    color: $white;
 
 
 }
-
-.header__menu   {
-
+.header__contact {
+    grid-column: 7/ span 6;
+    grid-row: 1/2;
+}
+.header__tel {
 }

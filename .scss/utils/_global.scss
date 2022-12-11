@@ -1,7 +1,22 @@
 
+body {
+    font-family: Roboto, sans-serif;
+    color: $black;   
+}
+
+
 .container {
     max-width: 1150px;
     padding-right: 15px;
-    margin-left: 15px;
-    margin: o auto;
+    padding-left: 15px;
+    margin: 0 auto;
 }
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    grid-auto-rows: auto;
+}
+
