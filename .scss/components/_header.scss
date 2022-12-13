@@ -1,15 +1,101 @@
+
 .header {
+    background-color: $dummy;
 }
 
-
+.header__body {
+    
+}
 .header__nav {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 1;
+    align-self: center;
 
-}   
+}
 .header__logo {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    align-self: center;
+    color: $white;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    display: flex;
+
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(26/20);
 
 
 }
+.header__logo-icon {
+    fill: $white;
+    margin-right: 11px;
+}
+.header__logo-span {
+    text-transform: uppercase;
+}
+.header__logo-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(21/18);
+}
+.header__menu {
+    position: relative;
+    display: flex;  
+    gap: min(120px, 10.7143%);
+    justify-content: center;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        display: block;
+        background-color: $white;
+        width: 100%;
+        height: 1px;
+    }
+    &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        display: block;
+        background-color: $white;
+        width: 100%;
+        height: 1px;
+    }
+}
+.header__menu-item {
+}
+.header__menu-link {
+    padding-top: 27px;
+    padding-bottom: 24px;
+    line-height: calc(19/16);
+    color: $white;
 
-.header__menu   {
+
+}
+.header__contact {
+    grid-column: 7/ span 6;
+    grid-row: 1 / span 1;
+    
+    color: $white;
+    font-weight: 700;
+    line-height: 130%;
+    color: $white;
+    display: flex;
+    gap: 19px;
+    justify-content: end;
+    align-items: center;
+    align-self: center;
+}
+.header__tel {
+    padding: 12px 31px 13px;
+    font-weight: 400;
+    background-color: $brown;
+    border-radius: 22px;
+    min-width: 215px;
 
 }
