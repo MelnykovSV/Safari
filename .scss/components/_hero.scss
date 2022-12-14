@@ -1,3 +1,36 @@
 .hero {
-    background-color: $dummy;
+  background-image: url("/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__body {
+  padding-top: 210px;
+  padding-bottom: 74px;
+}
+
+.hero__title {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-bottom: 400px;
+}
+.hero__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  grid-column: 1/6;
+  margin-bottom: 20px;
+}
+.hero__button {
+  padding: 19px 54px 20px 55px;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: $brown;
+  color: $white;
+  border-radius: 30px;
+  grid-column: 1/4;
 }

@@ -1,0 +1,43 @@
+.services {
+  background-color: $brown;
+}
+.container {
+}
+.services__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: $white;
+
+  grid-column: 1/-1;
+  margin-bottom: 52px;
+}
+.services__list {
+  grid-column: 1/-1;
+  //   gap: 55px;
+}
+.services__list-item {
+  grid-column-start: span 3;
+}
+.services__link {
+  padding-bottom: 12px;
+}
+.services__icon-contaner {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.services__icon {
+  fill: $white;
+}
+.services__item-text {
+  line-height: 130%;
+  color: $white;
+}
