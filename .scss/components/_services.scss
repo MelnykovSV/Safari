@@ -1,5 +1,7 @@
 .services {
   background-color: $brown;
+  padding-top: 32px;
+  padding-bottom: 60px;
 }
 .container {
 }
@@ -15,7 +17,7 @@
 }
 .services__list {
   grid-column: 1/-1;
-  //   gap: 55px;
+  row-gap: 55px;
 }
 .services__list-item {
   grid-column-start: span 3;

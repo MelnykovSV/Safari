@@ -1,36 +1,38 @@
-
 body {
-    font-family: Roboto, sans-serif;
-    color: $black;   
+  font-family: Roboto, sans-serif;
+  color: $black;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 100px;
+}
 
 .container {
-    max-width: 1150px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 0 auto;
+  max-width: 1150px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
 }
 
-
 .grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    column-gap: 32px;
-    grid-auto-rows: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  column-gap: 32px;
+  grid-auto-rows: auto;
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
-
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
