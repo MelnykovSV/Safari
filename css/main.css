@@ -27,12 +27,6 @@ body {
   color: #1F1E1E;
 }
 
-.main {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 100px;
-}
-
 .container {
   max-width: 1150px;
   padding-right: 15px;
@@ -201,6 +195,11 @@ body {
   grid-column: 1/4;
 }
 
+.countries {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .countries__list {
   row-gap: 32px;
   grid-column: 1/span 12;
@@ -267,6 +266,11 @@ body {
   color: #FFFFFF;
 }
 
+.offers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .offers__title {
   grid-column: 1/-1;
   margin-bottom: 40px;
@@ -288,7 +292,8 @@ body {
 }
 
 .offer__link {
-  position: relative;
+  aspect-ratio: 1/1;
+  background-size: contain;
 }
 
 .offer__image {
@@ -296,10 +301,6 @@ body {
 }
 
 .offer__title {
-  position: absolute;
-  left: 24px;
-  top: 16px;
-  width: 87%;
   font-weight: 500;
   font-size: 18px;
   line-height: 130%;
@@ -314,9 +315,6 @@ body {
 }
 
 .offer__price {
-  position: absolute;
-  left: 16px;
-  bottom: 19px;
   font-weight: 700;
   line-height: 130%;
   color: white;
@@ -338,10 +336,11 @@ body {
 }
 
 .offer-big__content {
-  position: absolute;
-  left: 30px;
-  top: 16px;
   width: 87%;
+}
+
+.map {
+  padding-bottom: 100px;
 }
 
 .map__title {
@@ -355,6 +354,10 @@ body {
 
 .map__image {
   grid-column: 1/-1;
+}
+
+.about {
+  padding-bottom: 100px;
 }
 
 .article {
@@ -446,6 +449,10 @@ body {
 
 .gallery__icon {
   fill: #FFFFFF;
+}
+
+.description {
+  padding-top: 100px;
 }
 
 .description__title {

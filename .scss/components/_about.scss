@@ -1,4 +1,5 @@
 .about {
+  padding-bottom: 100px;
 }
 
 .about__body {
@@ -7,28 +8,28 @@
 .about__article {
 }
 .article {
-    grid-column: 1/-1;
+  grid-column: 1/-1;
 }
 .article__body {
-    grid-column: 1 / 6;
+  grid-column: 1 / 6;
 }
 .article__title {
-    font-weight: 500;
-font-size: 36px;
-line-height: 42px;
-margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 25px;
 }
 .article__text {
-    font-size: 18px;
-line-height: 140%;
-    margin-bottom: 34px;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 34px;
 }
 .article__link {
-    line-height: calc(19/16);
+  line-height: calc(19 / 16);
 
-text-decoration-line: underline;
-color: $light;
+  text-decoration-line: underline;
+  color: $light;
 }
 .article__video {
-    grid-column: 6 / -1;
+  grid-column: 6 / -1;
 }
