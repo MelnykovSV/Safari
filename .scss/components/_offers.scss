@@ -28,12 +28,17 @@
 .offer__link {
   // position: relative;
   // background-color: $brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   aspect-ratio: 1/1;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16px 20px 19px 16px;
 }
-.offer__image {
-  width: 100%;
-}
+// .offer__image {
+//   width: 100%;
+// }
 .offer__title {
   // position: absolute;
   // left: 24px;
@@ -68,6 +73,8 @@
 .offer__country {
   line-height: 130%;
   color: $white;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .offer__time {
   line-height: 130%;

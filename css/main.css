@@ -292,12 +292,13 @@ body {
 }
 
 .offer__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   aspect-ratio: 1/1;
-  background-size: contain;
-}
-
-.offer__image {
-  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16px 20px 19px 16px;
 }
 
 .offer__title {
@@ -328,6 +329,8 @@ body {
 .offer__country {
   line-height: 130%;
   color: #FFFFFF;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .offer__time {
