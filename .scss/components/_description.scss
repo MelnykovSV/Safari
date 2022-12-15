@@ -1,0 +1,53 @@
+.description {
+}
+.description__body {
+}
+.container {
+}
+.grid {
+}
+.description__title {
+    font-weight: 700;
+font-size: 36px;
+line-height: 130%;
+text-align: center;
+text-transform: uppercase;
+grid-column: 1/-1;
+margin-bottom: 77px;
+
+}
+.description__text {
+    grid-column-start: span 6;
+    font-size: 18px;
+line-height: 140%;
+width: 99%;
+}
+.description__text-b {
+}
+.description__list {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 70px;
+
+    text-align: center;
+
+}
+.dl {
+}
+.description__list-num {
+    font-family: 'PT Serif', serif;
+font-weight: 700;
+font-size: 58px;
+line-height: 130%;
+color: $brown;
+}
+.description__list-desc {
+    font-weight: 500;
+    margin: 0;
+font-size: 20px;
+line-height: 130%;
+text-align: center;
+grid-row-start: 2;
+}
