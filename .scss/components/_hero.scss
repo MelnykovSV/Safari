@@ -2,6 +2,7 @@
   background-image: url("/images/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hero__body {
@@ -33,4 +34,45 @@
   color: $white;
   border-radius: 30px;
   grid-column: 1/4;
+  min-width: 250px;
+}
+
+
+@media screen and (max-width:800px) {
+
+  .hero__body {
+  padding-top: 210px;
+  padding-bottom: 55px;
+}
+
+.hero__title {
+  color: $white;
+  font-size: 40px;
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-bottom: 250px;
+}
+.hero__text {
+  color: $white;
+}
+}
+
+
+@media screen and (max-width:480px) {
+
+  .hero__body {
+  padding-top: 210px;
+  padding-bottom: 20px;
+}
+
+.hero__title {
+  color: $white;
+  font-size: 40px;
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-bottom: 100px;
+}
+.hero__text {
+  color: $white;
+}
 }

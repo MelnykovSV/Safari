@@ -66,12 +66,6 @@
   }
 }
 
-// .header__menu {
-//   display: grid;
-//   grid-template-columns: repeat(5, auto);
-//   gap: 100px;
-// }
-
 .header__menu-item {
 }
 .header__menu-link {
@@ -100,4 +94,41 @@
   background-color: $brown;
   border-radius: 22px;
   min-width: 215px;
+}
+.header__burger-container {
+  grid-column: 10/13;
+  grid-row: 1/2;
+}
+
+.header__burger {
+
+}
+
+
+@media screen and (max-width:700px) {
+
+  .header__logo {
+    grid-column-start: span 9;
+    grid-row: 1/2;
+
+
+}
+
+.header__contact {
+  grid-column-start: span 12;
+  grid-row: 2/3;
+}
+
+.header__nav {
+  grid-column-start: span 12;
+  align-self: center;
+  grid-row: 3/4;
+}
+.header__burger-container {
+  grid-column: 10/-1;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 }
