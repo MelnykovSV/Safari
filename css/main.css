@@ -554,17 +554,33 @@ body {
 
 .gallery__list {
   grid-column: 1/13;
-  gap: 32px;
+  -moz-column-gap: 2.8571%;
+       column-gap: 2.8571%;
+  row-gap: min(2.7826vw, 32px);
 }
 
 .gallery__list-item {
   grid-column-start: span 4;
 }
 
+.gallery__image {
+  width: 100%;
+}
+
 .gallery__icon {
   fill: #ffffff;
 }
 
+@media screen and (max-width: 770px) {
+  .gallery__list-item {
+    grid-column-start: span 6;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gallery__list-item {
+    grid-column-start: span 12;
+  }
+}
 .description {
   padding-top: 100px;
 }
