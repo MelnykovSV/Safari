@@ -1,4 +1,6 @@
 .offers {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .container {
 }
@@ -9,13 +11,13 @@
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: calc(42 / 36);
 }
 
 .offers__list {
   grid-column: 1/-1;
   grid-auto-flow: dense;
-  row-gap: 32px;
+  row-gap: 2.8571%;
 }
 .offers__item {
 }
@@ -24,17 +26,21 @@
   grid-row-start: span 3;
 }
 .offer__link {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16px 20px 19px 16px;
+  transition: transform $time $cubic;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
-.offer__image {
-  width: 100%;
-}
-.offer__title {
-  position: absolute;
-  left: 24px;
-  top: 16px;
-  width: 87%;
 
+.offer__title {
   font-weight: 500;
   font-size: 18px;
   line-height: 130%;
@@ -48,10 +54,6 @@
   color: $white;
 }
 .offer__price {
-  position: absolute;
-  left: 16px;
-  bottom: 19px;
-
   font-weight: 700;
   line-height: 130%;
   color: white;
@@ -63,6 +65,8 @@
 .offer__country {
   line-height: 130%;
   color: $white;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .offer__time {
   line-height: 130%;
@@ -70,8 +74,63 @@
 }
 
 .offer-big__content {
-  position: absolute;
-  left: 30px;
-  top: 16px;
   width: 87%;
+}
+
+.offer__link--big:hover,
+.offer__link--big:focus {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 862px) {
+  .offers__list {
+    gap: 20px;
+  }
+  .offer-normal {
+    grid-column-start: span 4;
+    grid-row-start: span 4;
+  }
+  .offer-big {
+    grid-column-start: span 8;
+    grid-row-start: span 8;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .offers__title {
+    font-size: 20px;
+  }
+
+  .offers__list {
+    gap: 10px;
+    width: 100%;
+  }
+  .offer-normal {
+    grid-column-start: span 6;
+    grid-row-start: span 6;
+  }
+  .offer-big {
+    grid-column-start: span 12;
+    grid-row-start: span 12;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .offer__title {
+    font-size: 14px;
+  }
+  .offer__price {
+    font-size: 12px;
+  }
+  .offer__link {
+    padding: 5px;
+  }
+  .offer__country {
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .offer__time {
+    font-size: 14px;
+  }
 }
