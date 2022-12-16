@@ -357,6 +357,10 @@ body {
   grid-column: 1/-1;
 }
 
+.about__body {
+  grid-column: 1/-1;
+}
+
 .article {
   grid-column: 1/-1;
 }
