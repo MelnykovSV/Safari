@@ -576,10 +576,23 @@ body {
   .gallery__list-item {
     grid-column-start: span 6;
   }
+  .gallery__title {
+    grid-column-start: span 6;
+  }
+  .gallery__nav {
+    grid-column: span 6;
+  }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .gallery__list-item {
     grid-column-start: span 12;
+  }
+  .gallery__title {
+    grid-column-start: span 12;
+  }
+  .gallery__nav {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
   }
 }
 .description {
