@@ -3,13 +3,14 @@
 }
 
 .about__body {
-    grid-column: 1/-1;
+  grid-column: 1/-1;
 }
 
 .about__article {
 }
 .article {
   grid-column: 1/-1;
+  align-items: center;
 }
 .article__body {
   grid-column: 1 / 6;
@@ -37,13 +38,13 @@
 }
 
 @media screen and (max-width: 900px) {
-    .article {
-        row-gap: 20px;
-      }
-    .article__body {
-        grid-column: 1 / -1;
-      }
-      .article__video {
-        grid-column: 1 / -1;
-      }
+  .article {
+    row-gap: 20px;
+  }
+  .article__body {
+    grid-column: 1 / -1;
+  }
+  .article__video {
+    grid-column: 1 / -1;
+  }
 }
