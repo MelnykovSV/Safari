@@ -458,6 +458,10 @@ body {
   padding-bottom: 100px;
 }
 
+.about__body {
+  grid-column: 1/-1;
+}
+
 .article {
   grid-column: 1/-1;
 }
@@ -488,8 +492,20 @@ body {
 
 .article__video {
   grid-column: 6/-1;
+  aspect-ratio: 640/400;
 }
 
+@media screen and (max-width: 900px) {
+  .article {
+    row-gap: 20px;
+  }
+  .article__body {
+    grid-column: 1/-1;
+  }
+  .article__video {
+    grid-column: 1/-1;
+  }
+}
 .gallery {
   background-color: #886239;
   padding-top: 49px;

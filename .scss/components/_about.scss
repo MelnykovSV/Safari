@@ -33,4 +33,17 @@
 }
 .article__video {
   grid-column: 6 / -1;
+  aspect-ratio: 640/400;
+}
+
+@media screen and (max-width: 900px) {
+    .article {
+        row-gap: 20px;
+      }
+    .article__body {
+        grid-column: 1 / -1;
+      }
+      .article__video {
+        grid-column: 1 / -1;
+      }
 }
