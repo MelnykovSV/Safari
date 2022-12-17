@@ -20,9 +20,12 @@
     <header class="header">
       <div class="container header__body grid">
         <a href="#" class="header__logo">
-          <svg class="header__logo-icon" width="44" height="48">
-            <use href="images/icons.svg#icon-logo"></use>
-          </svg>
+          <div class="logo__container">
+
+            <svg class="header__logo-icon" width="63" height="60">
+              <use href="images/icons.svg#icon-logo"></use>
+            </svg>
+          </div>
           <div class="heder__logo-body">
 
             Сафари <span class="header__logo-span">Туристик</span>
@@ -58,11 +61,11 @@
             >тел. 8-050-8-543-543</a
           >
         </p>
-        <div class="header__burger-container">
-          <svg class="header__burger" width="44" height="48">
-            <use href="images/icons.svg#icon-logo"></use>
+        <button type="button" class="header__burger-button visually-hidden">
+          <svg class="header__burger" width="35" height="35">
+            <use href="images/icons.svg#icon-burger"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </header>
 
@@ -493,5 +496,34 @@
     </main>
 
     <footer class="footer"></footer>
+
+    <div class="dropdown">
+
+      <div class="mobile-menu" >
+        <button type="button" class="mobile-menu__close-button">
+  
+          <svg class="mobile-menu__close-icon" width="30" height="30">
+            <use href="images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list">  
+          <li class="mobile-menu__menu-item">
+            <a href="#" class="mobile-menu__menu-link">Бронирование</a>
+          </li>
+          <li class="mobile-menu__menu-item">
+            <a href="#" class="mobile-menu__menu-link">Экскурсии</a>
+          </li>
+          <li class="mobile-menu__menu-item">
+            <a href="#" class="mobile-menu__menu-link">Туры </a>
+          </li>
+          <li class="mobile-menu__menu-item">
+            <a href="#" class="mobile-menu__menu-link">Об Африке</a>
+          </li>
+          <li class="mobile-menu__menu-item">
+            <a href="#" class="mobile-menu__menu-link">О нас</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

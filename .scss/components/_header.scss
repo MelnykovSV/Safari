@@ -25,10 +25,21 @@
   font-weight: 700;
   font-size: 20px;
   line-height: calc(26 / 20);
+
+  
+}
+.logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__logo-icon {
-  fill: $white;
-  margin-right: 11px;
+  margin-right: 11px; 
+
+}
+
+path {
+  fill: red;
 }
 .header__logo-span {
   text-transform: uppercase;
@@ -105,7 +116,10 @@
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:670px) {
+  .header {
+    padding-bottom: 10px;
+  }
 
   .header__logo {
     grid-column-start: span 9;
@@ -127,11 +141,27 @@
   align-self: center;
   grid-row: 3/4;
 }
-.header__burger-container {
+.header__burger-button {
   grid-column: 10/-1;
   grid-row: 1/2;
+  width: 50px;
+  height: 45px;
   display: flex;
-  justify-content: end;
+  justify-self: end;
+  align-self: center;
+  justify-content: center;
   align-items: center;
+  border: solid $white 1px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.66);
+  background-color: rgba(0,0,0,0);
+
+  &:hover, &:focus {
+    background-color: rgba(0,0,0,0.16);
+  }
+}
+
+.header__burger {
+fill: $white;
 }
 }

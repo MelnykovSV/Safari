@@ -25,6 +25,7 @@ img {
 body {
   font-family: Roboto, sans-serif;
   color: #1f1e1e;
+  margin: 0;
 }
 
 .container {
@@ -84,9 +85,18 @@ body {
   line-height: 1.3;
 }
 
+.logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__logo-icon {
-  fill: #ffffff;
   margin-right: 11px;
+}
+
+path {
+  fill: red;
 }
 
 .header__logo-span {
@@ -161,7 +171,10 @@ body {
   grid-row: 1/2;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 670px) {
+  .header {
+    padding-bottom: 10px;
+  }
   .header__logo {
     grid-column-start: span 9;
     grid-row: 1/2;
@@ -177,12 +190,26 @@ body {
     align-self: center;
     grid-row: 3/4;
   }
-  .header__burger-container {
+  .header__burger-button {
     grid-column: 10/-1;
     grid-row: 1/2;
+    width: 50px;
+    height: 45px;
     display: flex;
-    justify-content: end;
+    justify-self: end;
+    align-self: center;
+    justify-content: center;
     align-items: center;
+    border: solid #ffffff 1px;
+    border-radius: 4px;
+    box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.66);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .header__burger-button:hover, .header__burger-button:focus {
+    background-color: rgba(0, 0, 0, 0.16);
+  }
+  .header__burger {
+    fill: #ffffff;
   }
 }
 .hero {
@@ -724,4 +751,64 @@ body {
   line-height: 130%;
   text-align: center;
   grid-row-start: 2;
+}
+
+.dropdown {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mobile-menu {
+  position: absolute;
+  width: 300px;
+  right: 0;
+  top: 0;
+  background-color: #886239;
+  height: min(600px, 100%);
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.mobile-menu__close-button {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  width: 50px;
+  height: 45px;
+  display: flex;
+  justify-self: end;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  border: solid #ffffff 1px;
+  border-radius: 4px;
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.66);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mobile-menu__menu-link {
+  font-size: 25px;
+  line-height: 1.1875;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-menu {
+    width: 100vw;
+    height: 100%;
+    padding-left: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */
