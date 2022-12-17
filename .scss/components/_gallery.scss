@@ -31,7 +31,7 @@
   text-decoration-line: underline;
   color: $white;
 }
-.gallery__icon-container {
+.gallery__button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -39,6 +39,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 .gallery__list {
   grid-column: 1/13;
@@ -51,9 +53,9 @@
 .gallery__image {
   width: 100%;
 }
-.gallery__icon {
-  fill: $white;
-}
+// .gallery__icon {
+//   fill: $black;
+// }
 
 @media screen and (max-width: 770px) {
   .gallery__list-item {
@@ -77,5 +79,6 @@
   .gallery__nav {
     grid-column: 1 / -1;
     margin-bottom: 20px;
+    justify-content: start;
   }
 }

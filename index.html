@@ -417,12 +417,12 @@
             <a href="#" class="gallery__link">Перейти в раздел</a>
             <div class="gallery__arrows">
 
-              <div class="gallery__icon-container">
-                <svg class="gallery__icon" width="6" height="30"><use  href="images/icons.svg#icon-angle-left"></use></svg>
-              </div>
-              <div class="gallery__icon-container">
+              <button type="button" class="gallery__button">
+                <svg class="gallery__icon" width="6" height="12"><use  href="images/icons.svg#icon-angle-left"></use></svg>
+              </button>
+              <button type="button" class="gallery__button">
                 <svg class="gallery__icon" width="6" height="12"><use  href="images/icons.svg#icon-angle-right"></use></svg>
-              </div>
+              </button>
             </div>
           </div>
           <ul class="gallery__list grid">
@@ -497,7 +497,7 @@
 
     <footer class="footer"></footer>
 
-    <div class="dropdown">
+    <div class="dropdown visually-hidden">
 
       <div class="mobile-menu" >
         <button type="button" class="mobile-menu__close-button">
@@ -525,5 +525,8 @@
         </ul>
       </div>
     </div>
+
+    <svg class="gallery__icon" width="100" height="200"><use  href="images/icons.svg#icon-angle-left"></use></svg>
+    <svg class="gallery__icon" width="100" height="200"><use  href="images/icons.svg#icon-angle-right"></use></svg>
   </body>
 </html>
