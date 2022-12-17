@@ -176,7 +176,7 @@ path {
   grid-row: 1/2;
   width: 50px;
   height: 45px;
-  display: flex;
+  display: none;
   justify-self: end;
   align-self: center;
   justify-content: center;
@@ -191,26 +191,34 @@ path {
 }
 
 @media screen and (max-width: 670px) {
-  .header {
-    padding-bottom: 10px;
-  }
   .header__logo {
     grid-column-start: span 9;
     grid-row: 1/2;
   }
   .header__contact {
+    position: relative;
     grid-column-start: span 12;
     grid-row: 2/3;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .header__contact::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    height: 1px;
+    background-color: #ffffff;
+  }
   .header__nav {
-    grid-column-start: span 12;
-    align-self: center;
-    grid-row: 3/4;
+    display: none;
   }
   .header__burger {
     fill: #ffffff;
+  }
+  .header__burger-button {
+    display: flex;
   }
 }
 .hero {
