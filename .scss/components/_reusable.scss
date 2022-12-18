@@ -1,6 +1,4 @@
 .logo {
-  grid-column: 1 / span 4;
-  grid-row: 1 / span 1;
   align-self: center;
   color: $white;
   padding-top: 16px;
@@ -21,9 +19,6 @@
   margin-right: 11px;
 }
 
-path {
-  fill: red;
-}
 .logo__span {
   text-transform: uppercase;
 }
