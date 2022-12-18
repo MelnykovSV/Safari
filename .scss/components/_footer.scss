@@ -78,14 +78,15 @@
   color: $white;
   margin-bottom: 7px;
 }
-.contacts__list {
+
+.contacts__tel {
   font-size: 14px;
   line-height: 130%;
   color: $white;
 
   opacity: 0.8;
 }
-.contacts__tel {
+.contacts__email {
   font-size: 14px;
   line-height: 130%;
   color: $white;
@@ -95,4 +96,80 @@
 .link {
 }
 .contacts__email {
+}
+
+@media screen and (max-width: 900px) {
+  .copy__name {
+    margin-bottom: 20px;
+  }
+  .copy__text {
+    margin-bottom: 20px;
+  }
+
+  .address__title {
+    margin-bottom: 20px;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+  }
+
+  .contacts__tel {
+    margin-bottom: 20px;
+  }
+  .contacts__email {
+    font-size: 14px;
+    line-height: 130%;
+    color: $white;
+
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__content {
+    justify-content: center;
+  }
+  .copy {
+    margin-top: 30px;
+    grid-column: 3/6;
+    grid-row: 2/3;
+    width: 225px;
+    justify-self: center;
+  }
+
+  .address {
+    grid-column: 2/4;
+    width: 184px;
+  }
+  .contacts {
+    grid-column: 5/7;
+    width: 209px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .footer__content {
+    justify-content: center;
+  }
+  .copy {
+    margin-top: 0;
+    grid-column: 1/-1;
+    grid-row: auto;
+    width: 225px;
+    justify-self: center;
+    margin-bottom: 40px;
+  }
+
+  .address {
+    grid-column: 1/-1;
+    width: 184px;
+    justify-self: center;
+    margin-bottom: 40px;
+  }
+  .contacts {
+    grid-column: 1/-1;
+    width: 209px;
+    justify-self: center;
+  }
 }
