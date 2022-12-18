@@ -1,3 +1,98 @@
 .footer {
   background-color: $black;
+  padding-top: 77px;
+  padding-bottom: 81px;
+}
+
+.footer__body {
+}
+.grid {
+}
+.container {
+}
+.logo {
+  grid-column: 1/-1;
+  justify-content: center;
+  margin-bottom: 69px;
+}
+
+.footer__content {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: start;
+}
+.copy {
+  grid-column: 2/3;
+  width: 225px;
+}
+.copy__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: $white;
+  margin-bottom: 7px;
+}
+.copy__text {
+  font-size: 14px;
+  line-height: 130%;
+  color: $white;
+
+  opacity: 0.8;
+  margin-bottom: 3px;
+}
+.copy_link {
+  font-size: 14px;
+  line-height: 130%;
+  color: $white;
+  text-decoration: underline;
+
+  opacity: 0.8;
+}
+.address {
+  grid-column: 4/5;
+  width: 184px;
+}
+.address__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: $white;
+  margin-bottom: 7px;
+}
+.address__link {
+  font-size: 14px;
+  line-height: 130%;
+  color: $white;
+
+  opacity: 0.8;
+}
+.contacts {
+  grid-column: 6/7;
+  width: 209px;
+}
+.contacts__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: $white;
+  margin-bottom: 7px;
+}
+.contacts__list {
+  font-size: 14px;
+  line-height: 130%;
+  color: $white;
+
+  opacity: 0.8;
+}
+.contacts__tel {
+  font-size: 14px;
+  line-height: 130%;
+  color: $white;
+
+  opacity: 0.8;
+}
+.link {
+}
+.contacts__email {
 }

@@ -110,45 +110,6 @@ path {
   align-self: center;
 }
 
-.logo {
-  grid-column: 1/span 4;
-  grid-row: 1/span 1;
-  align-self: center;
-  color: #ffffff;
-  padding-top: 16px;
-  padding-bottom: 15px;
-  display: flex;
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.3;
-}
-
-.logo__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo__icon {
-  margin-right: 11px;
-}
-
-path {
-  fill: red;
-}
-
-.logo__span {
-  text-transform: uppercase;
-}
-
-.logo__text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.1666666667;
-}
-
 .header__menu {
   position: relative;
   display: flex;
@@ -1037,4 +998,95 @@ path {
 }
 .footer {
   background-color: #1f1e1e;
+  padding-top: 77px;
+  padding-bottom: 81px;
+}
+
+.logo {
+  grid-column: 1/-1;
+  justify-content: center;
+  margin-bottom: 69px;
+}
+
+.footer__content {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: start;
+}
+
+.copy {
+  grid-column: 2/3;
+  width: 225px;
+}
+
+.copy__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+
+.copy__text {
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-bottom: 3px;
+}
+
+.copy_link {
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.address {
+  grid-column: 4/5;
+  width: 184px;
+}
+
+.address__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+
+.address__link {
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.contacts {
+  grid-column: 6/7;
+  width: 209px;
+}
+
+.contacts__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+
+.contacts__list {
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.contacts__tel {
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */
