@@ -953,6 +953,8 @@ path {
 .booking-form__checkbox {
   width: 26px;
   height: 26px;
+  min-width: 26px;
+  min-height: 26px;
   border: 2px solid #c4c4c4;
   border-radius: 2px;
 }
