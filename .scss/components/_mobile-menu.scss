@@ -6,10 +6,12 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
+  pointer-events: none;
 }
 
 .is-open {
   opacity: 1;
+  pointer-events: all;
 }
 
 .mobile-menu {

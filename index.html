@@ -492,10 +492,32 @@
         
 
       </section>
+      <section class="booking">
+        <div class="booking__body container grid">
+          <form action="" class="booking-form">
+            <h2 class="booking-form__title">Забронируйте отдых в Африке</h2>
+            <input type="text" class="booking-form__name form-input" placeholder="Ваше имя">
+            <input type="text" class="booking-form__phone form-input" placeholder="Телефон">
+            <input type="text" class="booking-form__mail form-input" placeholder="E-mail">
+            <textarea name="" class="booking-form__comment form-input" id="" cols="30" rows="4" placeholder="Комментарий"></textarea>
+
+            <button type="submit" class="booking-form__submit-button">Отправить заявку</button>
+
+            <div class="booking-form__check">
+              <input type="checkbox" class="booking-form__checkbox" id="booking-form__checkbox"></input>
+              <label for="booking-form__checkbox" class="booking-form__checkbox-label">Согласие на обработку персональных данных</label>
+
+            </div>
+          </form> 
+
+        </div>
+      </section>
 
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+
+    </footer>
 
     <div class="dropdown js-menu-container">
 
@@ -529,5 +551,6 @@
     <svg class="gallery__icon" width="100" height="200"><use  href="images/icons.svg#icon-angle-left"></use></svg>
     <svg class="gallery__icon" width="100" height="200"><use  href="images/icons.svg#icon-angle-right"></use></svg>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/list-wrap.js"></script>
   </body>
 </html>

@@ -1,0 +1,95 @@
+.booking {
+    padding-top: 75px;
+    padding-bottom: 76px;
+    background-color: $form-bg;
+}
+.booking__body {
+    
+    padding-left: 142px;
+    padding-right: 146px;
+}
+
+.booking-form {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(6, calc((100% - 160px) / 6));
+    column-gap: 32px;
+
+}
+.booking-form__title {
+    grid-column-start: span 6;
+font-weight: 700;
+font-size: 36px;
+line-height: 130%;
+text-align: center;
+margin-bottom: 43px;
+}
+.form-input::placeholder {
+    line-height: 130%;
+color: $light;
+}
+
+.form-input {
+    line-height: 130%;
+color: $black;
+}
+.booking-form__name {
+    grid-column-start: span 2;
+    padding: 11px 14px 12px;
+
+}
+.booking-form__phone {
+    grid-column-start: span 2;
+}
+.booking-form__mail {
+    grid-column-start: span 2;
+}
+
+.booking-form__comment {
+    margin-top: 28px;
+    grid-column-start: span 6;
+    margin-bottom: 67px;
+    padding: 14px;
+    min-height: 112px;
+    resize: none;
+
+
+}
+.booking-form__submit-button {
+    grid-column: 1/4;
+    padding: 19px 65px 20px 65px;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: $brown;
+    color: $white;
+    border-radius: 30px;
+    min-width: 297px;
+    border: none;
+    cursor: pointer;
+    justify-self: left;
+}
+.booking-form__check {
+    grid-column: -4/-1;
+    display: flex;
+    justify-self: end;
+    align-self: center;
+    justify-content: right;
+    align-items: center;
+    gap: 19px;
+    flex-shrink: 1;
+    width: 400px;
+
+}
+.booking-form__checkbox {
+    width: 26px; 
+    height: 26px; 
+    border: 2px solid $light;
+    border-radius: 2px;  
+}   
+.booking-form__checkbox-label {
+    line-height: 130%;
+    text-decoration:underline;
+    flex-shrink: 1;
+}
+
+  
