@@ -899,6 +899,7 @@ body {
 .form-input {
   line-height: 130%;
   color: #1f1e1e;
+  border: 1px solid #d9d9de;
 }
 
 .booking-form__name {
