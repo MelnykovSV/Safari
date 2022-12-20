@@ -25,6 +25,7 @@
   padding-bottom: 12px;
 }
 .services__icon-contaner {
+  position: relative;
   width: 85px;
   height: 85px;
   display: flex;
@@ -33,6 +34,36 @@
   border: 1px solid $white;
   border-radius: 50%;
   margin-bottom: 15px;
+
+  .services__link:hover &::after {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    content: "";
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+    animation: 1.5s linear 0s infinite normal rotation;
+
+  }
+
+
+  @keyframes rotation { 
+    from {
+      transform: rotate(0d)
+    }
+    to {
+      transform: rotate(360deg)
+    }
+    
+  }
+
+
+  .services__link:hover &::after {
+  }
 }
 
 .services__icon {

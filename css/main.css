@@ -138,10 +138,26 @@ path {
 }
 
 .header__menu-link {
+  position: relative;
   padding-top: 27px;
   padding-bottom: 24px;
   line-height: 1.1875;
   color: #ffffff;
+}
+.header__menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 350ms ease;
+}
+.header__menu-link:hover::after, .header__menu-link:focus::after {
+  transform: scaleX(1);
 }
 
 .header__contact {
@@ -159,11 +175,31 @@ path {
 }
 
 .header__tel {
+  position: relative;
   padding: 12px 31px 13px;
   font-weight: 400;
   background-color: #886239;
   border-radius: 22px;
   min-width: 215px;
+  transition: background-color 350ms ease;
+}
+.header__tel:hover, .header__tel:focus {
+  background-color: #715230;
+}
+.header__tel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: opacity 350ms ease;
+}
+.header__tel:hover::after, .header__tel:focus::after {
+  opacity: 1;
 }
 
 .header__burger-container {
@@ -252,6 +288,7 @@ path {
 }
 
 .hero__button {
+  position: relative;
   padding: 19px 54px 20px 55px;
   font-size: 18px;
   line-height: 21px;
@@ -260,6 +297,25 @@ path {
   border-radius: 30px;
   grid-column: 1/4;
   min-width: 250px;
+  transition: background-color 350ms ease;
+}
+.hero__button:hover, .hero__button:focus {
+  background-color: #715230;
+}
+.hero__button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: opacity 350ms ease;
+}
+.hero__button:hover::after, .hero__button:focus::after {
+  opacity: 1;
 }
 
 @media screen and (max-width: 800px) {
@@ -313,7 +369,7 @@ path {
   transition: transform 350ms ease;
 }
 .countries__link:hover, .countries__link:focus {
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 
 .countries__item-body {
@@ -383,6 +439,7 @@ path {
 }
 
 .services__icon-contaner {
+  position: relative;
   width: 85px;
   height: 85px;
   display: flex;
@@ -392,7 +449,36 @@ path {
   border-radius: 50%;
   margin-bottom: 15px;
 }
-
+.services__link:hover .services__icon-contaner::after {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  content: "";
+  border-top: 5px solid green;
+  border-bottom: 5px solid green;
+  -webkit-animation: 1.5s linear 0s infinite normal rotation;
+          animation: 1.5s linear 0s infinite normal rotation;
+}
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0d);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0d);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .services__icon {
   fill: #ffffff;
 }
@@ -459,7 +545,7 @@ path {
   transition: transform 350ms ease;
 }
 .offer__link:hover, .offer__link:focus {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .offer__title {
@@ -674,6 +760,19 @@ path {
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 350ms ease;
+}
+.gallery__button:hover, .gallery__button:focus {
+  transform: scale(1.05);
+}
+
+.gallery__icon {
+  transform: scale(1);
+  transition: transform 350ms ease;
+}
+.gallery__button:hover .gallery__icon {
+  transform: scale(1.1);
 }
 
 .gallery__list {
@@ -797,11 +896,13 @@ path {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   pointer-events: none;
+  transition-property: opacity;
+  transition-delay: 350ms;
 }
 
-.is-open {
-  opacity: 1;
-  pointer-events: all;
+.dropdown.is-open {
+  transition-property: opacity;
+  transition-delay: 350ms;
 }
 
 .mobile-menu {
@@ -815,6 +916,17 @@ path {
   padding-left: 30px;
   padding-right: 50px;
   padding-bottom: 50px;
+  transform: translateY(-100%);
+  transition: transform 350ms ease;
+}
+.dropdown.is-open > .mobile-menu {
+  transform: translateY(0);
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 350ms ease 350ms;
 }
 
 .mobile-menu__close-button {

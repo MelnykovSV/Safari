@@ -41,6 +41,20 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+  transform: scale(1);
+  transition: transform $time $cubic;
+
+  &:hover, &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.gallery__icon {
+  transform: scale(1);
+  transition: transform $time $cubic;
+.gallery__button:hover & {
+  transform: scale(1.1);
+}
 }
 .gallery__list {
   grid-column: 1/13;
