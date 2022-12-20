@@ -896,13 +896,7 @@ path {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   pointer-events: none;
-  transition-property: opacity;
-  transition-delay: 350ms;
-}
-
-.dropdown.is-open {
-  transition-property: opacity;
-  transition-delay: 350ms;
+  transition: opacity 350ms ease;
 }
 
 .mobile-menu {
@@ -916,17 +910,11 @@ path {
   padding-left: 30px;
   padding-right: 50px;
   padding-bottom: 50px;
-  transform: translateY(-100%);
-  transition: transform 350ms ease;
-}
-.dropdown.is-open > .mobile-menu {
-  transform: translateY(0);
 }
 
 .is-open {
   opacity: 1;
   pointer-events: all;
-  transition: opacity 350ms ease 350ms;
 }
 
 .mobile-menu__close-button {
@@ -950,13 +938,32 @@ path {
 .mobile-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .mobile-menu__menu-link {
+  position: relative;
+  display: inline-block;
   font-size: 25px;
   line-height: 1.1875;
   color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mobile-menu__menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 350ms ease;
+}
+.mobile-menu__menu-link:hover::after, .mobile-menu__menu-link:focus::after {
+  transform: scaleX(1);
 }
 
 @media screen and (max-width: 600px) {
