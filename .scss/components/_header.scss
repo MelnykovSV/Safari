@@ -12,41 +12,12 @@
   grid-row: 2 / span 1;
   align-self: center;
 }
-.header__logo {
+
+.logo-header {
   grid-column: 1 / span 4;
   grid-row: 1 / span 1;
-  align-self: center;
-  color: $white;
-  padding-top: 16px;
-  padding-bottom: 15px;
-  display: flex;
-
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(26 / 20);
-}
-.logo__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header__logo-icon {
-  margin-right: 11px;
 }
 
-path {
-  fill: red;
-}
-.header__logo-span {
-  text-transform: uppercase;
-}
-.header__logo-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(21 / 18);
-}
 .header__menu {
   position: relative;
   display: flex;

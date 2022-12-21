@@ -19,17 +19,17 @@
   <body>
     <header class="header">
       <div class="container header__body grid">
-        <a href="#" class="header__logo">
+        <a href="#" class="logo logo-header">
           <div class="logo__container">
 
-            <svg class="header__logo-icon" width="63" height="60">
+            <svg class="logo__icon" width="63" height="60">
               <use href="images/icons.svg#icon-logo"></use>
             </svg>
           </div>
-          <div class="heder__logo-body">
+          <div class="logo__body">
 
-            Сафари <span class="header__logo-span">Туристик</span>
-            <p class="header__logo-text">Турагентство</p>
+            Сафари <span class="logo__span">Туристик</span>
+            <p class="logo__text">Турагентство</p>
           </div>
         </a>
         <nav class="header__nav">
@@ -516,7 +516,62 @@
     </main>
 
     <footer class="footer">
+      <div class="footer__body grid container">
+        <a href="#" class="logo logo-footer">
+          <div class="logo__container">
 
+            <svg class="logo__icon" width="63" height="60">
+              <use href="images/icons.svg#icon-logo"></use>
+            </svg>
+          </div>
+          <div class="logo__body">
+
+            Сафари <span class="logo__span">Туристик</span>
+            <p class="logo__text">Турагентство</p>
+          </div>
+        </a>
+
+        <div class="footer__content">
+          <div class="copy">
+            <p class="copy__name">
+              Турагентство «Сафари Туристик»
+            </p>
+            <div class="copy__text"><span>&#169</span> 2021. Все права защищены</div>
+            <a href="" class="copy_link">Политика конфиденциальности</a>
+          </div>
+
+
+          <address class="address">
+            <p class="address__title">Адрес:</p>
+                <a
+                  href="https://goo.gl/maps/xwKoeAPqyCRNAAmo9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="address__link"
+                  >г. Киев, ул.Мира, 20, отель «Динамо», 1 этаж</a
+                >
+          </address>
+
+
+          <address class="contacts">
+            <p class="contacts__title">Заказ туров и бронирование:</p>
+
+                <a href="tel:+380508543543" class="contacts__tel link"
+                  >тел. 8-050-8-543-543</a
+                >
+                <a
+                  href="mailto:safari_turistic@gmail.com"
+                  lang="en"
+                  class="contacts__email link"
+                  >e-mail: safari_turistic@gmail.com</a
+                >
+
+          </address>
+        </div>
+        
+
+        
+      </div>
     </footer>
 
     <div class="dropdown js-menu-container">
@@ -548,8 +603,7 @@
       </div>
     </div>
 
-    <svg class="gallery__icon" width="100" height="200"><use  href="images/icons.svg#icon-angle-left"></use></svg>
-    <svg class="gallery__icon" width="100" height="200"><use  href="images/icons.svg#icon-angle-right"></use></svg>
+  
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/list-wrap.js"></script>
   </body>
