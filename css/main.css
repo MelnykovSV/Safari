@@ -334,6 +334,7 @@ iframe {
   grid-column: 1/4;
   min-width: 250px;
   transition: background-color 350ms ease;
+  white-space: nowrap;
 }
 .hero__button:hover, .hero__button:focus {
   background-color: #715230;
