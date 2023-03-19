@@ -1066,10 +1066,12 @@ iframe {
 
 .booking-form__phone {
   grid-column-start: span 2;
+  padding: 11px 14px 12px;
 }
 
 .booking-form__mail {
   grid-column-start: span 2;
+  padding: 11px 14px 12px;
 }
 
 .booking-form__comment {
