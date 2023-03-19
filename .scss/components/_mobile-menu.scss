@@ -8,15 +8,9 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity $time $cubic;
-  
-  
 }
 .dropdown.is-open {
-
- 
 }
-
-
 
 .mobile-menu {
   position: absolute;
@@ -29,21 +23,16 @@
   padding-left: 30px;
   padding-right: 50px;
   padding-bottom: 50px;
- 
 }
 .is-open {
   opacity: 1;
   pointer-events: all;
-  
-  
 }
-
-
 
 .mobile-menu__close-button {
   position: absolute;
-  right: 30px;
-  top: 20px;
+  right: 20px;
+  top: 30px;
 
   width: 50px;
   height: 45px;
@@ -54,11 +43,17 @@
   align-items: center;
   border: solid $white 1px;
   border-radius: 4px;
-  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0);
+  transition: background-color $time $cubic;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.16);
+  }
 }
 .mobile-menu__close-icon {
+  fill: white;
 }
 .mobile-menu__list {
   display: flex;
@@ -89,7 +84,8 @@
     transform: scaleX(0);
     transition: transform $time $cubic;
   }
-  &:hover::after, &:focus::after {
+  &:hover::after,
+  &:focus::after {
     transform: scaleX(1);
   }
 }
