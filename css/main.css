@@ -58,6 +58,11 @@ body {
   margin: -1px;
 }
 
+iframe {
+  width: 100%;
+  border: 0px;
+}
+
 .logo {
   align-self: center;
   color: #ffffff;
