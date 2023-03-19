@@ -877,8 +877,6 @@ body {
 }
 
 .description__list-item {
-  width: -moz-fit-content;
-  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -891,8 +889,7 @@ body {
   font-size: 58px;
   line-height: 130%;
   color: #886239;
-  width: -moz-fit-content;
-  width: fit-content;
+  min-width: 135px;
 }
 
 .description__list-desc {
@@ -902,6 +899,9 @@ body {
   line-height: 130%;
   text-align: center;
   grid-row-start: 2;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 100%;
 }
 
 @media screen and (max-width: 950px) {
